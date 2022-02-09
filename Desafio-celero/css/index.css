@@ -21,7 +21,7 @@
 }
 
 
-/*--------------HEADER-------------------*/
+/**********************HEADER******************/
 
 #header,
 #main {
@@ -74,7 +74,7 @@
 }
 
 
-/* ---------------------------------- MAIN ----------------------------------*/
+/* ********************** MAIN **************************/
 
 #main {
     padding-top: 4rem;
@@ -155,3 +155,86 @@
     background-color: white;
     text-decoration: none;
 }
+
+/************************ARTICLE*************************/
+
+#latest-recipes {
+    padding: 4rem;
+
+}
+
+#latest-recipes h1{
+    text-align: center;
+    width: 272px;
+    height: 80px;
+    margin: 4.5px 1px 0 270.1px;
+    
+
+}
+
+#decoration-between-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************ FOOTER******************************/
+#footer {
+    background-image: url(../img/Rodapé@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 122px;
+    padding: 5rem;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a{
+    color: white;
+    transition: 400ms;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-right a:hover{
+    color: var(--active-link-color);
+    transition: 400ms;
+}
+.Icon {
+    width: 14.5px;
+    height: 14.5px;
+    margin: 0 17.5px 0 0;
+    background-color: var(--white);
+  }
+
+#footer-decoration{
+    position: absolute;
+    bottom: 46%;
+    right: 10%
+}
+
+/* *************************** SECTION *****************************/
+#filter-recipes {
+    padding: 3rem;
+}
+
+#filter-recipes h1{
+    text-align: center;
+}
+
+
