@@ -1,0 +1,67 @@
+
+header {
+    width: 100%;
+    height: 344px;
+    background-color: #ffdbbc;
+}
+header .container {            
+    max-width: 960px;
+    height: 344px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 67.5px;
+    height: 27px;
+    margin: 27px 0 0 27px;
+    font-family: var(--fair);
+    font-size: 20.5px;
+    font-weight: 700;
+    text-align: left;
+    color: #000000;
+    float: left;
+}
+.text-style-1 {
+    color: var(--lipstick);
+}
+/**********************search ***********************/
+.search {            
+    width: 45%;
+    height: 30px;
+    padding: 0px 20px;
+    float: left;
+    margin-left: 13%;
+    margin-top: 24px;
+    border-radius: 20px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+.search-bar {
+    width: 85%;
+    height: 28px;
+    border: none;
+    font-size: 14px;
+}
+.search-bar::placeholder {
+    width: 88.5px;
+    height: 10.5px;
+    opacity: 0.18;
+    font-family: Roboto;
+    font-size: 8px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.search-image {   
+    height: 12px;
+    width: 12px;
+    margin-top: 10px;
+    float: right;
+    background: url("/Desafio-celero/img/Lupa.png") no-repeat;
+    border: none;      
+    cursor: pointer;   
+}

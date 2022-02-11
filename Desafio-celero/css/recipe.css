@@ -1,0 +1,216 @@
+
+
+.element-1 {
+    width: 302px;
+    height: 220px;
+    right: -30px;
+    top: -15px;
+    background: url('/Desafio-celero/img/Elemento_1.png') no-repeat right;
+    position: absolute;
+}
+.element-2 {
+    width: 200px;
+    padding-top: 450px;
+    left: 80px;
+    background: url('/Desafio-celero/img/Elemento_2.png') no-repeat left center;    
+    position: absolute;            
+}  
+.element-4 {
+    width: 84px;
+    height: 83px;
+    left: 5%;
+    top: 0%;
+    background: url('/Desafio-celero/img/Elemtno_4.png') no-repeat bottom center;
+    position: absolute;
+}
+.element-5 {
+    width: 100%;
+    height: 50px;
+    margin: 50px 0 85px 0;
+    background: url('/Desafio-celero/img/Elemento_5.png') no-repeat bottom center;            
+}
+
+.element-6 {
+    width: 85px;
+    height: 77px;
+    right: 5%;
+    top: 50%;
+    background: url('/Desafio-celero/img/Elemento_6.png') no-repeat bottom center;
+    position: absolute;           
+}
+.element-7 {
+    width: 67px;
+    height: 54px;
+    background: url('/Desafio-celero/img/Elemento_7.png') no-repeat;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+.recipe {
+    width: 530px;
+    margin: 0 auto;
+}
+.welcome-back {
+    padding-top: 132px;
+    font-family: var(--fair);
+    font-weight: 700;
+    text-align: left;
+    color: #000000;
+}
+.recipe-info {
+    margin-top: 42px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    color: #0d0d0d;
+}
+.recipe-picture {
+    width: 225px;
+    height: 180px;
+    top: -180px;
+    left: 10%;
+    float: right;
+    position: relative;
+}
+.hrecipe-hover {
+    width: 84.5%;
+    padding-left: 35px;
+    background: #fff url('/Desafio-celero/img/Seta_direita.png') 10px center no-repeat;
+    color: var(--lipstick);
+    font-size: 8px;
+    font-family: Roboto;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.recipe-picture:hover .hrecipe-hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+#latest-recipes {
+    width: 100%;
+    float: right;
+    margin-top: -96px;
+}
+#latest-recipes .container {
+    max-width: 960px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 45.5px;
+    background-color: #ffffff;
+}
+#latest-recipes h2 {
+    font-family: var(--fair);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+} 
+
+#latest-recipes-carousel {
+    width: 100%;
+    max-width: 660px;            
+    margin: 69px auto;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-recipe {
+    width: 320px;
+    margin-right: 57px;
+    float: left;
+    box-shadow: 0 5px 5px 0 #797979;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.carousel-recipe img{
+    object-fit: cover;
+}
+.recipe-description {
+    font-size: 8px;
+    font-family: Roboto;
+    font-weight: 700;
+    text-align: left;
+    color: var(--lipstick);            
+}
+.recipe-description .title {
+    font-family: var(--fair);
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 12px 0;
+}
+.difficulty-level {
+    float: left;
+    margin-right: 10px;            
+}
+.star-level {
+    float: left;
+    display: inline-flex;
+}
+.star {
+    width: 8px;
+    height: 7.6px;
+    background: url('/Desafio-celero/img/Estrela.svg') no-repeat;
+    background-size: cover;
+}
+.disabled {
+    opacity: 0.1;
+}        
+.recipe-hover {
+    width: 100%;
+    padding-left: 35px;
+    background: #fff url('/Desafio-celero/img/Seta_direita.png') 10px center no-repeat;
+    color: var(--lipstick);
+    font-size: 8px;
+    font-family: Roboto;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.carousel-recipe:hover .recipe-hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+.amp-carousel-button {
+    width: 30px;
+    height: 30px;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+.amp-carousel-button-prev {
+    margin: 100px 0 0 375px;
+    background-image: url("/Desafio-celero/img/Seta_esquerda.svg");
+    background-size: 10px;
+    background-color: var(--white);
+    border-radius: 16.5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);     
+    position: relative;  
+}
+.amp-carousel-button-next {
+    margin: 100px 200px 0 0;
+    background-image: url("/Desafio-celero/img/Seta_direita.svg");
+    background-size: 10px;
+    background-color: var(--white);
+    border-radius: 16.5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);            
+}        
+.amp-carousel-button-prev:hover {
+    background-color: var(--lipstick);
+    background-image: url('/Desafio-celero/img/Seta_esquerda_b.svg');
+}
+.amp-carousel-button-next:hover {
+    background-color: var(--lipstick);
+    background-image: url('/Desafio-celero/img/Seta_direita_b.svg');
+}

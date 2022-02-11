@@ -1,77 +1,295 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html amp lang="pt_br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Logo_Cookfy.png" type="image/x-icon">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+    <link rel="canonical" href=".">
+    <!------------------------------------Text Fonts API------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Avatar_feminino.png" type="image/x-icon">
+    <!-------------------------------------page styles--------------------------------------------------->
+    <link href="css/Header.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/recipe.css" rel="stylesheet">
+    <link href="css/gastronomic.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+
+    <!-----------------------------carousel creation script---------------------------------------------->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <!------------------------------script for creating food selection----------------------------------->
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script> 
+     <!-----------------------------script to create side menu------------------------------------------->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <!-------------------------------script to create dish description----------------------------------->
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <title>Cookfy</title>
+    
 </head>
 
 <body>
+    <header>
+        <div class="container">            
+            <h1 class="logo">
+                Cook<span class="text-style-1">fy</span>
+            </h1>
 
-    <header id="header">
-        <div class="header container-grid">
-            <img src="img/Logo_Cookfy@2x.png" alt="Logo do Site Cookfy" id="logo">
-            <div>
-                <input type="search" placeholder="Pesquise alguma receita">
-                <a href=""><img src="img/Lupa@2x.png" alt="Botão de busca" id="search-bar-img"></a>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Pesquise alguma receita">
+                <a href="#"><button class="search-image"></button></a>
             </div>
-            <div>
-                <a id="user" href="#">
-                    <p id="user-name"><span id="user-name-menu">Marina</span></p>
-                    <img src="img/Avatar_feminino.png" alt="Foto do usuário" id="user-img">
+
+            <!---------------user icon ------------------------->
+            <a class="user" on="tap:user-menu">
+                <div class="user-name" id="user-name"></div>
+                
+                <div class="user-avatar-container">                
+                    <amp-img class="user-avatar"
+                    src="/Desafio-celero/img/Avatar_feminino.png"
+                    width="19"
+                    height="20"
+                    alt="Marina">
+                    </amp-img>
+                </div>
+            </a>           
+
+            
+            <div class="recipe">
+                <div class="element-2"></div>
+                <div class="welcome-back">
+                    <h1 id="wb-text">Bem vindo de volta</h1>
+                    <h1 class="text-style-1" id="welcome-name"></h1>
+                </div>
+
+                <div class="recipe-info">
+                    <h4>
+                        Contribuição da comunidade: <br/>
+                        Ceviche de peixe branco <br/>
+                        <span class="text-style-1">Por Michel Filipe</span>
+                    </h4>
+                </div>
+                
+                <!----------------plate photo-------------------->
+                <a class="recipe-picture" on="tap:light-lb">
+                    <div class="element-1"></div>
+                    <amp-img src="/Desafio-celero/img/ceviche.png"
+                        width="225"
+                        height="180"
+                        alt="Ceviche de peixe branco">
+                    </amp-img>
+                    <div class="hrecipe-hover">Ver foto</div>
                 </a>
             </div>
+            
+            <!-------------------dish description-------------------->
+            <amp-lightbox id="light-lb" layout="nodisplay">
+                <div class="lightbox-background"></div>
+                
+                <div class="lightbox-content">
+
+                  <div class="lightbox-image">
+                    <amp-img src="/Desafio-celero/img/Header.jpg"
+                        width="487"
+                        height="360">
+                    </amp-img>
+                  </div>
+
+                  <div class="lightbox-desc">
+                    <h3>
+                      Ceviche de peixe branco<br>
+                      <span class="text-style-1">Por Michel Filipe</span>
+                    </h3>
+                    O ceviche é um prato de origem peruana feito com cubos de peixe que são cozidos em uma solução ácida, geralmente caldo de limão. Quando o peixe em contato com o limão, um processo químico é iniciado: a proteína do peixe se desnatura e a textura do peixe muda e o peixe fica mais saboroso. O segredo para fazer um bom ceviche é a qualidade do ingrediente principal: o peixe tem que estar bem fresco. Esse prato peruano pode ser feito com salmão, camarões e alguns contam até com manga e abacate, e o tradicional é preparado com peixe branco.  
+                    <div class="lightbox-actions">
+                      <a href="#" class="lightbox-like">Curtir</a>
+                      <a href="#" class="lightbox-recipe">Ver receita</a>
+                    </div>
+                  </div>
+                
+                  <button on="tap:light-lb.close">X</button>
+                
+                </div>
+              </amp-lightbox>
+            
         </div>
     </header>
-    <main id="main">
-        <img id="main-decoration" src="img/Elemento_2@2x.png" alt="">
-        <div class="main container-grid">
-            <div id="main-left">
-                <h1 class="h1">Bem vindo de volta <span id="user-full-name"> Marina Wedderhoff</span></h1>
-                <p>Contribuição da comunidade: <br> <span id="recipe-on-main"> Ceviche de peixe branco <br> <span id="recipe-autor"> Por Michel Filipe</span></span>
-                </p>
-            </div>
-            <div id="main-right">
-                <a href="#"> <img class="prato-main" src="img/ceviche.jpg" alt="Foto de um prato de Ceviche">
+    <!------------------------profile menu------------------------->
+    <amp-sidebar id="user-menu" layout="nodisplay" side="right">
+        <div class="container">
+            <a class="close-menu" href="#" on="tap:user-menu.close">
+                <amp-img src="/Desafio-celero/img/Fechar.png"
+                  width="16"
+                  height="16">
+                </amp-img>
+                <span>Fechar</span>
+            </a>
+
+            <a class="user">
+                <div class="user-avatar-container">
+                    <amp-img class="user-avatar"
+                        src="/Desafio-celero/img/Avatar_feminino@2x.png"
+                        width="36"
+                        height="40"
+                        alt="Marina">
+                    </amp-img>                    
+                </div>
                 
-                </a>
+                <div id="user-name-sidebar"></div>
+            </a>
+            
+            <div class="info email" id="email"></div>
+            <div class="info phone" id="phone"></div>     
+            
+            <div id="plan">Plano Mensal</div>
+            <div id="days-left">16 dias restantes</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <a href="#" id="subscription">Assinar plano anual</a>
+            
+            <div id="options">
+                <ul>
+                    <li><a class="report" href="#">Reportar bug ou abuso</a></li>
+                    <li><a class="password" href="#">Alterar senha</a></li>
+                    <li><a class="sign-out" href="#">Sair</a></li>
+                </ul>
             </div>
         </div>
-    </main>
-    <article id="latest-recipes" class="container-grid">
-        <h1 class="h1"> Experimente alguma das últimas receitas</h1>
-    </article>
-    <div id="decoration-between-sections">
-        <img  src="img/Elemento_5@3x.png" alt="">
-    </div>
-    <section id="filter-recipes" class="container-grid"> 
-        <h1 class="h1"> Entre no mundo gastronômico</h1>
+    </amp-sidebar>
+
+    <section id="latest-recipes">
+        
+        <div class="container">
+
+            <h2>Experimente alguma das últimas receitas</h2>
+
+            <!-----------------------recipe carousel-------------------->
+            <amp-carousel id="latest-recipes-carousel"
+            height="155" 
+            layout="fixed-height"
+            type="slides"
+            loop
+            controls>
+
+                <div class="carousel-item">
+                    <div class="carousel-recipe">
+                        <amp-img src="/Desafio-celero/img/Sandwich.jpg"
+                            width="319"
+                            height="155"
+                            layout="responsive"
+                            alt="Sandwich"></amp-img>
+
+                        <div class="recipe-hover">Ver receita</div>
+                    </div>
+
+                    <div class="recipe-description">
+                        <h3 class="title">Sanduíche de tomate com salada de ovos</h3>
+
+                        <div class="difficulty-level">Fácil</div>
+                        
+                    </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-recipe">                        
+                            <amp-img src="/Desafio-celero/img/Iogurte.jpg"
+                                width="319"
+                                height="155"
+                                layout="responsive"
+                                alt="Iogurte"></amp-img>                        
+                            <div class="recipe-hover">Ver Foto</div>
+                        </div>
+
+                        <div class="recipe-description">
+                        <h3 class="title">Iogurte de fruta crocante</h3>
+
+                        <div class="difficulty-level">Difícil</div>
+                            
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-recipe">
+                        <amp-img src="/Desafio-celero/img/Sandwich.jpg"
+                            width="319"
+                            height="155"
+                            layout="responsive"
+                            alt="Sandwich"></amp-img>
+
+                        <div class="recipe-hover">Ver Foto</div>
+                    </div>
+
+                    <div class="recipe-description">
+
+                        <h3 class="title">Sanduíche de tomate com salada de ovos</h3>
+
+                        <div class="difficulty-level">Fácil</div>
+                    </div>
+
+                    </div>
+                </div>
+            </amp-carousel>
+            <div class="element-5"></div>
+            <div class="element-7"></div> 
+        </div>
+
     </section>
-    <footer id="footer">
-        <img id="footer-decoration" src="img/Rodapé_elemento_2@2x.png" alt="">
-        <div class="footer container-grid">
-            <div class="footer-left"> 
-                <img src="img/Logo_Cookfy.png" alt="Logo do site Cookfy">
-                <h5> &copy; 2020 Cookfy.</h5>
-            </div>
-            <div class="footer-right"> 
+    <section id="gastronomic-world">
+        
+        <div class="container">
+            <h2>Entre no mundo gastronômico</h2>
+            <div class="element-4"></div>
+            <div class="element-6"></div>
+            <div class="gw-types">
+                <!-------------------food type selection-------------------------->
+                <amp-selector id="gw-selector"
+                    class="carousel-preview"
+                    on="select:gw-carousel.goToSlide(index=event.targetOption)"
+                    layout="container">
+
+                    <div class="cuisine"><div class="items" option="0" selected>Cozinha</div></div>
+                    <div class="patisserie"><div class="items " option="1">Patisserie</div></div>
+                    <div class="drink"><div class="items" option="2">Drinks</div></div>
+                </amp-selector>
                 
-                <a href="#" id="social-media" > <i class="fab fa-facebook-square"></i></a>
-                <a href="#" id="social-media" > <i class="fab fa-instagram"></i> </a>
-                <a href="#" id="social-media" > <i class="fab fa-twitter"></i> </a>
-                <a href="#" id="social-media" > <i class="fab fa-linkedin"></i> </a>
-                <a href="#" id="social-media" > <i class="fab fa-pinterest"> </i></a>
+                <amp-carousel id="gw-carousel"
+                    width="319"
+                    height="213"
+                    layout="responsive"
+                    type="slides"
+                    on="slideChange:gw-selector.toggle(index=event.index, value=true)">
+                        <amp-img src="/Desafio-celero/img/Cozinha.jpg"
+                            layout="fill"
+                            alt="Cozinha"></amp-img>
+                        <amp-img src="/Desafio-celero/img/Patisserie.jpg"
+                            layout="fill"
+                            alt="Patisserie"></amp-img>
+                        <amp-img src="/Desafio-celero/img/Drink.jpg"
+                            layout="fill"
+                            alt="Drinks"></amp-img>
+                </amp-carousel>
             </div>
         </div>
-    
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logo">Cook<span class="text-style-1">fy</span></div>
+            <div class="copyright">© 2020 Cookfy.</div>
+         <!--------------------social network----------------------->   
+            <div id="social-media">
+                <a href="#" class="facebook"></a>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="linkedin"></a>
+                <a href="#" class="pinterest"></a>
+            </div>
+          </div>
     </footer>
-
-    
-
-</body>
-
+    <script src="API.js"></script>
+  </body>
 </html>
