@@ -61,7 +61,7 @@ header .container {
     width: 12px;
     margin-top: 10px;
     float: right;
-    background: url("/Desafio-celero/img/Lupa.png") no-repeat;
+    background: url("/img/Lupa.png") no-repeat;
     border: none;      
     cursor: pointer;   
 }

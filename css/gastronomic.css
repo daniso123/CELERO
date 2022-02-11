@@ -52,25 +52,25 @@ amp-selector#gw-selector [option][selected] {
     box-shadow: 0 5px 25px 0 #fff;
 }
 .cuisine .items{
-    background: url('/Desafio-celero/img/Cozinha.png') no-repeat;
+    background: url('/img/Cozinha.png') no-repeat;
     background-position: 55px center;
 }
 .cuisine .items:hover, amp-selector#gw-selector .cuisine [option][selected]{
-    background-image: url('/Desafio-celero/img/Cozinha_active.png');
+    background-image: url('/img/Cozinha_active.png');
 }
 .patisserie .items{
-    background: url('/Desafio-celero/img/Patisserie.png') no-repeat;
+    background: url('/img/Patisserie.png') no-repeat;
     background-position: 55px center;
 }
 .patisserie .items:hover, amp-selector#gw-selector .patisserie [option][selected]{
-    background-image: url('/Desafio-celero/img/Patisserie_active.png');
+    background-image: url('/img/Patisserie_active.png');
 }
 .drink .items{
-    background: url('/Desafio-celero/img/Drinks.png') no-repeat;
+    background: url('/img/Drinks.png') no-repeat;
     background-position: 55px center;
 }
 .drink .items:hover, amp-selector#gw-selector .drink [option][selected] {
-    background-image: url('/Desafio-celero/img/Drinks_active.png');
+    background-image: url('/img/Drinks_active.png');
 }
 
 #gw-carousel{
@@ -87,7 +87,7 @@ footer {
     width: 100%;
     height: 180px;
     float: left;
-    background: url('/Desafio-celero/img/Rodapé.png') no-repeat center top;
+    background: url('/img/Rodapé.png') no-repeat center top;
     background-size: contain;
 }
 
@@ -127,34 +127,34 @@ footer .logo {
     transition: 0.5s;
 }
 .facebook {
-    background: url('/Desafio-celero/img/Fb.png') no-repeat;
+    background: url('/img/Fb.png') no-repeat;
 }
 .facebook:hover {
-    background-image: url('/Desafio-celero/img/Fb_active.png');
+    background-image: url('/img/Fb_active.png');
 }
 .instagram {
-    background: url('/Desafio-celero/img/IG.png') no-repeat;
+    background: url('/img/IG.png') no-repeat;
 }
 .instagram:hover {
-    background-image: url('/Desafio-celero/img/IG_active.png');
+    background-image: url('/img/IG_active.png');
 }
 .twitter{
-    background: url('/Desafio-celero/img/Twitter.png') no-repeat;
+    background: url('/img/Twitter.png') no-repeat;
 }
 .twitter:hover {
-    background-image: url('/Desafio-celero/img/Twitter_active.png');
+    background-image: url('/img/Twitter_active.png');
 }
 .linkedin {
-    background: url('/Desafio-celero/img/Linkedin.png') no-repeat;
+    background: url('/img/Linkedin.png') no-repeat;
 }
 .linkedin:hover {
-    background-image: url('/Desafio-celero/img/Linkedin_active.png');
+    background-image: url('/img/Linkedin_active.png');
 }
 .pinterest {
-    background: url('/Desafio-celero/img/Pinterest.png') no-repeat;
+    background: url('/img/Pinterest.png') no-repeat;
 }
 .pinterest:hover {
-    background-image: url('/Desafio-celero/img/Pinterest_active.png');
+    background-image: url('/img/Pinterest_active.png');
 }
 .lightbox-background{
     background: rgba(0,0,0,.8);
@@ -220,14 +220,14 @@ footer .logo {
 .lightbox-like{
     border-radius: 19px;
     border: solid 0.5px var(--lipstick);
-    background: url('/Desafio-celero/img/Like.png') no-repeat 13px center;
+    background: url('/img/Like.png') no-repeat 13px center;
     padding: 3px 20px 3px 24px;
     text-align: center;
     display: inline;
 }
 .lightbox-recipe{
     display: inline;
-    background: url('/Desafio-celero/img/Seta_direita.png') no-repeat left center;
+    background: url('/img/Seta_direita.png') no-repeat left center;
     padding: 3px 20px 3px 14px;
     margin-left: 20px;
 }
