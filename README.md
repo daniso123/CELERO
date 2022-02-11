@@ -8,3 +8,4 @@ The objective of this project is the creation of the CookFly culinary portal.
 ### 3-Enter the project through the terminal, and type the following command:
 **http-server -c-1**
 ### 4-Open the link that will appear in the terminal.
+### 5- Or go to: <https://cookfly.herokuapp.com/>
