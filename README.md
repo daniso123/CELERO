@@ -2,7 +2,6 @@
 
 The objective of this project is the creation of the CookFly culinary portal.
 # How to run the project
-# How to run the project
 ### 1- Clone the repository on your machine
 ### 2- installing an http server. For its installation, follow the tutorial presented on this page:
 <https://www.npmjs.com/package/http-server>
